@@ -27,7 +27,7 @@ const https = require('https');
 const url = require('url');
 
 const TARGET_URL = 'https://radio2.pro-fhi.net/flux-ddrzvfve/stream';
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 const server = http.createServer((req, res) => {
   // Parse the target URL
