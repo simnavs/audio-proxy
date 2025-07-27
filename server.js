@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 const app = express();
 
 app.use("/stream", createProxyMiddleware({
-  target: "https://radio2.pro-fhi.net",
+  target: "https://radio2.pro-fhi.net/flux-ddrzvfve/stream",
   changeOrigin: true,
   pathRewrite: {
     "^/stream": "/listen-ddrzvfve-stream.mp3"
